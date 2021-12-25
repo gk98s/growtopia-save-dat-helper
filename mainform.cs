@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Drawing.Drawing2D;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.IO;
@@ -98,17 +91,66 @@ namespace SaveDatHelper
 
         private void btn_save_Click(object sender, EventArgs e)
         {
-
+            if (File.Exists(GTL + "\\save.dat"))
+            {
+            if (File.Exists(FL + "\\save.dat"))
+                {
+                    File.Delete(FL + "\\save.dat");
+                    File.Copy(GTL + "\\save.dat", FL + "\\save.dat");
+                    MessageBox.Show("Successfully saved", "Overwrite");
+                }
+            else
+                {
+                    File.Copy(GTL + "\\save.dat", FL + "\\save.dat");
+                    MessageBox.Show("Successfully saved", "Successful");
+                }
+            }
+            else
+            {
+                MessageBox.Show("There's no file named save.dat in your GT Location. That's probably because you secured it. Try going to options and click \"Back\" and try again.", "Error");
+            }
         }
 
         private void btn_secure_Click(object sender, EventArgs e)
         {
-            if (File.Exists(FL + "")) ;
+            if (File.Exists(FL + "\\save.dat"))
+            {
+                if (File.Exists(GTL + "\\save.dat"))
+                {
+                    File.Delete(GTL + "\\save.dat");
+                    MessageBox.Show("Successfully secured.", "Successful");
+                }
+                else
+                {
+                    MessageBox.Show("There's no file named save.dat in your GT Location. That's probably because you already secured it.", "Error");
+                }
+            }
+            else
+            {
+                MessageBox.Show("There's nothing named save.dat in your Folder. Please make sure to save before securing.", "Error");
+            }
         }
 
         private void btn_replace_Click(object sender, EventArgs e)
         {
-
+            if (File.Exists(FL + "\\save.dat"))
+            {
+            if (File.Exists(GTL + "\\save.dat"))
+                {
+                    MessageBox.Show("Successfully replaced.", "Overwrite");
+                    File.Delete(GTL + "\\save.dat");
+                    File.Copy(FL + "\\save.dat", GTL + "\\save.dat");
+                }
+            else
+                {
+                    File.Copy(FL + "\\save.dat", GTL + "\\save.dat");
+                    MessageBox.Show("Successfully replaced.", "Successful");
+                }
+            }
+            else
+            {
+                MessageBox.Show("There's nothing named save.dat in your Folder. Please make sure to save before replacing.", "Error");
+            }
         }
     }
 }
