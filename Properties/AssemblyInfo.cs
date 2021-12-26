@@ -5,13 +5,13 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("SaveDatHelper")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Save Dat Helper")]
+[assembly: AssemblyDescription("A tool to avoid save.dat stealers.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("SaveDatHelper")]
+[assembly: AssemblyCompany("GK98")]
+[assembly: AssemblyProduct("Save Dat Helper")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyTrademark("GK98")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible
