@@ -7,6 +7,12 @@ using System.IO;
 namespace SaveDatHelper
 
 {
+
+    public class AutoSecure
+    {
+        
+    }
+
     public partial class mainform : Form
     {
 
