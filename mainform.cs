@@ -13,7 +13,7 @@ namespace SaveDatHelper
         
     }
 
-    public partial class mainform : Form
+    public partial class Mainform : Form
     {
 
         bool mouseDown;
@@ -32,7 +32,7 @@ namespace SaveDatHelper
         int nHeightEllipse
     );  //roundedcorners end
 
-        public mainform()
+        public Mainform()
         {
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25)); //roundedcorners

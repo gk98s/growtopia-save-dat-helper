@@ -1,6 +1,6 @@
 ﻿namespace SaveDatHelper
 {
-    partial class mainform
+    partial class Mainform
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainform));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Mainform));
             this.btn_close = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_secure = new System.Windows.Forms.Button();
