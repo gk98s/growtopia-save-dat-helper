@@ -22,4 +22,4 @@ Replace: This is what you'd want to use before you open the game.
 
 Secure: Make sure you use this after you're done playing. As longer as the save.dat is secured save.dat stealers won't be able to steal your save.dat
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/m8eFk7T-5ys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+https://youtu.be/m8eFk7T-5ys
